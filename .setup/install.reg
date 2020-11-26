@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions]
+"version"="1.0.0"
+"console"=dword:00000000
+"vcs"=dword:00000000

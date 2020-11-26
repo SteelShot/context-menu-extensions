@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console]
+"ps"=dword:00000001
+
+; PowerShell (Menu)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\powershell]
+"Icon"="powershell.exe"
+"MUIVerb"="PowerShell"
+"subcommands"=""
+
+; PowerShell (User)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\powershell\shell\open]
+"Icon"="powershell.exe"
+"MUIVerb"=hex(2):61,00,73,00,20,00,25,00,55,00,53,00,45,00,52,00,4e,00,41,00,\
+  4d,00,45,00,25,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\powershell\shell\open\command]
+@="powershell.exe -noexit -command Set-Location '%V'"
+
+; PowerShell (Admin)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\powershell\shell\runas]
+"Icon"="powershell.exe"
+"MUIVerb"="as Administrator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\powershell\shell\runas\command]
+@="powershell.exe -noexit -command Set-Location '%V'"

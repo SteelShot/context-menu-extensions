@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions]
+"console"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console]
+"cmd"=dword:00000000
+"ps"=dword:00000000
+"pwsh"=dword:00000000
+
+; Directory
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\00CMConsole]
+"Icon"="cmd.exe"
+"MUIVerb"="Open in Console"
+"Extended"=""
+"ExtendedSubCommandsKey"="Directory\\ContextMenuExtensions\\Console"
+
+; Background
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\00CMConsole]
+"Icon"="cmd.exe"
+"MUIVerb"="Open Console Prompt"
+"Extended"=""
+"ExtendedSubCommandsKey"="Directory\\ContextMenuExtensions\\Console"

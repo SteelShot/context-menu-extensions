@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass -File .setup\setup.ps1

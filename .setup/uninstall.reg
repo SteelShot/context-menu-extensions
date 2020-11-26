@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\00CMConsole]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\00CMConsole]

@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console]
+"cmd"=dword:00000001
+
+; Command Prompt (Menu)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\cmd]
+"Icon"="cmd.exe"
+"MUIVerb"="Command Prompt"
+"subcommands"=""
+
+; Command Prompt (User)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\cmd\shell\open]
+"Icon"="cmd.exe"
+"MUIVerb"=hex(2):61,00,73,00,20,00,25,00,55,00,53,00,45,00,52,00,4e,00,41,00,\
+  4d,00,45,00,25,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\cmd\shell\open\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; Command Prompt (Admin)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\cmd\shell\runas]
+"Icon"="cmd.exe"
+"MUIVerb"="as Administrator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\cmd\shell\runas\command]
+@="cmd.exe /s /k pushd \"%V\""

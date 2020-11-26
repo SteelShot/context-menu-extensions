@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console]
+"ps"=dword:00000001
+
+; PowerShell 7 (Menu)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\pwsh]
+"Icon"="pwsh.exe"
+"MUIVerb"="PowerShell 7"
+"subcommands"=""
+
+; PowerShell 7 (User)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\pwsh\shell\open]
+"Icon"="pwsh.exe"
+"MUIVerb"=hex(2):61,00,73,00,20,00,25,00,55,00,53,00,45,00,52,00,4e,00,41,00,\
+  4d,00,45,00,25,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\pwsh\shell\open\command]
+@="pwsh.exe -noexit -command Set-Location '%V'"
+
+; PowerShell 7 (Admin)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\pwsh\shell\runas]
+"Icon"="pwsh.exe"
+"MUIVerb"="as Administrator"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\ContextMenuExtensions\Console\shell\pwsh\shell\runas\command]
+@="pwsh.exe -noexit -command Set-Location '%V'"
